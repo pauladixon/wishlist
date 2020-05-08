@@ -11,4 +11,4 @@ class Wish(models.Model):
         return self.wish
     
     def get_absolute_url(self):
-        return reverse('wishes_detail', kwargs={'wish_id': self.id})
+        return reverse('home')

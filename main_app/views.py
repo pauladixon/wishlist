@@ -9,10 +9,6 @@ def home(request):
         'wishes': wishes,
         })
 
-def wishes_index(request):
-    wishes = Wish.objects.all()
-    return render(request, 'wishes/index.html', {'wishes': wishes})
-
 def wishes_detail(request, wish_id):
     wish = Wish.objects.get(id=wish_id)
     return render(request, 'wishes/detail.html', { 
