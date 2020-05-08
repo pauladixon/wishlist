@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div>
+  <section>
+    <p> check out your wish </p>
+    <div>
+        <span>{{wish.wish}}</span>
+        <span>
+            <a href="{% url 'wishes_update' wish.id %}">edit wish</a>
+            <a href="{% url 'wishes_delete' wish.id %}">delete wish</a>
+        </span>
+    </div>
+  </section>
+</div>
+{% endblock %}

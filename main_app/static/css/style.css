@@ -1,0 +1,17 @@
+body {
+    background-color: wheat;
+}
+
+main {
+flex: 1 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: maroon;
+}
+  
+thead {
+    border-bottom: solid mediumorchid;
+    
+}

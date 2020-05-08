@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div>
+  <p>delete wish</p>
+  <div>
+    <p>are you sure you want to delete "{{ object.wish }}"?</p>
+  </div>
+  <form action="" method="POST">
+    {% csrf_token %}
+    <input type="submit" value="delete">
+    <a href="{% url 'wishes_detail' wish.id %}">cancel</a>
+  </form>
+</div>
+{% endblock %}
+
